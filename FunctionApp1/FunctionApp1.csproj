@@ -1,4 +1,4 @@
-<Project Sdk="D:\Program Files (x86)\dotnet\sdk\2.0.0-preview1-005977\Sdks\Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
   </PropertyGroup>
