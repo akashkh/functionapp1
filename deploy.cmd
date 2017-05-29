@@ -58,7 +58,7 @@ call :ExecuteCmd nuget.exe restore "%DEPLOYMENT_SOURCE%\FunctionAppVS2017_3Previ
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 2. Build and publish
-call :ExecuteCmd "D:\Program Files (x86)\MSBuild-15.3-preview\MSBuild\15.0\Bin\MSBuild.exe" "%DEPLOYMENT_SOURCE%\FunctionAppVS2017_3Preview\FunctionAppVS2017_3Preview.csproj" /p:DeployOnBuild=true /p:configuration=Release /p:publishurl="%DEPLOYMENT_TEMP%" %SCM_BUILD_ARGS%
+call :ExecuteCmd "D:\Program Files (x86)\MSBuild-15.3-preview\MSBuild\15.0\Bin\MSBuild.exe" "%DEPLOYMENT_SOURCE%\FunctionApp1\FunctionApp1.csproj" /p:DeployOnBuild=true /p:configuration=Release /p:publishurl="%DEPLOYMENT_TEMP%" %SCM_BUILD_ARGS%
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 3. KuduSync
