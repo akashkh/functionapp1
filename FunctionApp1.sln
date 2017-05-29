@@ -17,6 +17,6 @@ Global
 		{7DD9489B-92B6-4148-ACB1-86226B7F15E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+		HideSolutionNode = TRUE
 	EndGlobalSection
 EndGlobal
