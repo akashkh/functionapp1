@@ -54,7 +54,7 @@ IF NOT DEFINED KUDU_SYNC_CMD (
 echo Handling function App deployment with Custom script.
 
 :: 1. Restore nuget packages
-call :ExecuteCmd nuget.exe restore "%DEPLOYMENT_SOURCE%\FunctionAppVS2017_3Preview.sln" -MSBuildPath "D:\Program Files (x86)\MSBuild-15.3-preview\MSBuild\15.0\Bin"
+call :ExecuteCmd nuget.exe restore "%DEPLOYMENT_SOURCE%\FunctionApp1.sln" -MSBuildPath "D:\Program Files (x86)\MSBuild-15.3-preview\MSBuild\15.0\Bin"
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 2. Build and publish
